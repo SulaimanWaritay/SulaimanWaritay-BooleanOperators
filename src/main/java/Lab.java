@@ -7,13 +7,17 @@
  * More resources: https://www.freejavaguide.com/boolean_operators.htm
  * 
  * NOTE: All of these problems can be solved with one line with boolean operators - eg, 'return !b;'
+ * @param <or>
  */
-public class Lab {
+public class Lab<or> {
     /**
      * @param b a true/false value.
      * @return if b is true, return true. if b is false, return false.
      */
     public boolean returnBoolean(boolean b){
+        if(b){
+            return true;
+        }else
         return false;
     }
 
@@ -23,7 +27,10 @@ public class Lab {
      * look into boolean operations to do this without using if/else statements.
      */
     public boolean returnNot(boolean b){
-        return false;
+        if(b){
+            return false;
+        }else
+        return true;
     }
 
     /**
@@ -33,6 +40,9 @@ public class Lab {
      * look into boolean operations to do this without using if/else statements.
      */
     public boolean returnAnd(boolean b1, boolean b2){
+        if(b1 &&  b2 ){
+            return true;
+        }else
         return false;
     }
 
@@ -43,6 +53,9 @@ public class Lab {
      * look into boolean operations to do this without using if/else statements.
      */
     public boolean returnOr(boolean b1, boolean b2){
+        if(b1 || b2){
+            return true;
+        }else
         return false;
     }
 
